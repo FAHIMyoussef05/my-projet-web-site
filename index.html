@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Une description concise de ma page.">
+    <meta name="author" content="yousseffahim">
+    <meta name="keywords" content="HTML, CSS, JavaScript, tutoriel">
+    <link rel="icon" href="logoyoussef.png" type="image/x-icon">
+    <title>Educational Resource</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .h2 {
+            font-size: 24px;
+            text-align: center;
+        } 
+        header {
+            background-color: #181717;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: white;
+            overflow: hidden;
+            text-align: right;
+        }
+        nav a {
+            float: right;
+            color: black;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            color: #333;
+        }
+        .code-example {
+            background-color: #eee;
+            padding: 10px;
+            border-left: 4px solid #4CAF50;
+            font-family: monospace;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            margin-top: 200px;
+        }
+        .column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }}
+        .image-container { width: 100%; /* Ensures the container takes up the full width of its parent */ text-align:center; /* Centers the image horizontally */ } 
+        .image-container img { max-width: 50%; /* Adjusts the image size, making sure it doesn't exceed 50% of the container's width */ height: auto; /* Maintains the aspect ratio of the image */ }
+        .divider { border: 0; height: 5px; background: #181717; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo" style="width:40px;" class="rounded-pill">
+          </a>
+        </div>
+      </nav>
+    <header>
+        <h1>Learn Programming Basics</h1>
+        <p>Your go-to resource for coding tutorials and tips!</p>
+    </header>
+
+    <nav>
+        <a href="#html">HTML Basics</a>
+        <a href="#css">CSS Basics</a>
+        <a href="#javascript">JavaScript Basics</a>
+        <a href="https://fahimyoussef05.github.io/Quiz/" target="_blank">Quiz Time!</a>
+    </nav>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="prog1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3>HTML</h3>
+          <p>Welcom to HTML basics</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="prog2.jpg" alt="Chicago" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3>CSS</h3>
+          <p> Learn CSS basics</p>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="prog3.jpg" alt="New York" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3>JavaScript</h3>
+          <p> Learn JavaScript basics</p>
+        </div>  
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+    <div class="container">
+        <div id="html" class="section">
+            <h2 style="color: red; text-align:center; text-transform: uppercase; font-size: 3rem; margin: 10px;">
+                HTML Basics</h2>
+            <div class="image-container">
+                <img src="imghtml.webp" alt="Educational Image">
+            </div>
+            <p style="outline: 5px solid yellow;">HTML (HyperText Markup Language) is the standard language for creating web pages.</p>
+            <div class="code-example">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &nbsp;&nbsp;&lt;head&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Page&lt;/title&gt;<br>
+                &nbsp;&nbsp;&lt;/head&gt;<br>
+                &nbsp;&nbsp;&lt;body&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello, World!&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </div>
+            <h3>Key HTML Tags:</h3>
+            <ul>
+                <li><strong>&lt;h1&gt; to &lt;h6&gt;:</strong> Defines headings. &lt;h1&gt; is the largest, &lt;h6&gt; is the smallest.</li>
+                <li><strong>&lt;p&gt;:</strong> Defines a paragraph.</li>
+                <li><strong>&lt;a&gt;:</strong> Defines a hyperlink. Example: &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</li>
+                <li><strong>&lt;img&gt;:</strong> Embeds an image. Example: &lt;img src="image.jpg" alt="Description"&gt;</li>
+                <li><strong>&lt;ul&gt; and &lt;li&gt;:</strong> Creates an unordered list with list items.</li>
+            </ul>
+
+            <h3>Example: Adding an Image</h3>
+            <div class="code-example">
+                &lt;img src="https://via.placeholder.com/300" alt="Example Image"&gt;
+            </div>
+
+            <p>HTML is easy to learn and is the foundation of web development. Experiment with different tags to create your own pages!</p>
+        </div>
+
+        <hr class="divider">
+
+        <div id="css" class="section">
+            <h2 style="color: red; text-align: center; text-transform: uppercase; font-size: 3rem;">
+                CSS Basics</h2>
+            <div class="image-container">
+                <img src="imgcss.jpg" alt="HTML Structure Example" class="img-fluid rounded">
+            </div>
+            <p style="outline: 5px solid yellow;">CSS (Cascading Style Sheets) is used to style and layout web pages. It allows you to add colors, fonts, spacing, and much more to your website.</p>
+
+            <h3>Example: Changing Text Color</h3>
+            <div class="code-example">
+                h1 {<br>
+                &nbsp;&nbsp;color: blue;<br>
+                }
+            </div>
+
+            <h3>Selectors in CSS</h3>
+            <ul>
+                <li><strong>Element Selector:</strong> Targets all elements of a specific type. Example: <code>p { color: red; }</code></li>
+                <li><strong>Class Selector:</strong> Targets elements with a specific class. Example: <code>.myClass { font-size: 20px; }</code></li>
+                <li><strong>ID Selector:</strong> Targets an element with a specific ID. Example: <code>#myId { background-color: yellow; }</code></li>
+            </ul>
+
+            <h3>Example: Adding a Background Color</h3>
+            <div class="code-example">
+                body {<br>
+                &nbsp;&nbsp;background-color: lightgray;<br>
+                }
+            </div>
+
+            <h3>Box Model</h3>
+            <p>The box model describes how elements are displayed on a web page. It includes margins, borders, padding, and the actual content.</p>
+            <div class="code-example">
+                div {<br>
+                &nbsp;&nbsp;width: 300px;<br>
+                &nbsp;&nbsp;padding: 20px;<br>
+                &nbsp;&nbsp;border: 5px solid black;<br>
+                &nbsp;&nbsp;margin: 15px;<br>
+                }
+            </div>
+
+            <h3>Fonts and Text Styling</h3>
+            <p>CSS allows you to change fonts and style text easily.</p>
+            <div class="code-example">
+                h1 {<br>
+                &nbsp;&nbsp;font-family: 'Arial', sans-serif;<br>
+                &nbsp;&nbsp;font-size: 24px;<br>
+                &nbsp;&nbsp;text-align: center;<br>
+                }
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div id="javascript" class="section">
+            <h2 style="color: red; text-align: center; text-transform: uppercase; font-size: 2.5rem; ">
+                JavaScript Basics</h2>
+            <div class="image-container">
+                <img src="java.jpg" alt="HTML Structure Example" class="img-fluid rounded">
+            </div>
+            <p style="outline: 5px solid yellow;">JavaScript is the programming language that makes web pages interactive. It allows you to manipulate HTML elements, respond to user actions, and dynamically update content on the page.</p>
+        
+            <h3>What is JavaScript?</h3>
+            <p>JavaScript is a lightweight, interpreted programming language primarily used for adding interactivity to websites. It works alongside HTML and CSS to create dynamic content such as form validation, animations, and interactive maps.</p>
+        
+            <h3>Example: Displaying Text</h3>
+            <p>Here’s a simple JavaScript example that writes text to the web page:</p>
+            <div class="code-example">
+                <script>
+                    document.write("Hello, JavaScript World!");
+                </script>
+            </div>
+        
+            <h3>Variables</h3>
+            <p>In JavaScript, variables are used to store data. You can declare variables using the <code>let</code>, <code>const</code>, or <code>var</code> keywords.</p>
+            <div class="code-example">
+                let name = "John";<br>
+                const age = 30;<br>
+                var city = "New York";
+            </div>
+        
+            <h3>Functions</h3>
+            <p>Functions in JavaScript are blocks of code designed to perform a particular task. You can call a function to execute it whenever needed.</p>
+            <div class="code-example">
+                
+                    function greet(name) {
+                        return "Hello, " + name + "!";
+                    }
+                    alert(greet("Alice"));
+                
+            </div>
+        
+            <h3>Event Handling</h3>
+            <p>JavaScript allows you to respond to events, such as button clicks, mouse movements, and key presses. Below is an example of a button that shows an alert when clicked:</p>
+            <button onclick="alert('Button clicked!')">Click Me</button>
+        
+            <h3>Conditionals</h3>
+            <p>Conditionals allow you to execute code based on specific conditions using <code>if</code>, <code>else if</code>, and <code>else</code>.</p>
+            <div class="code-example">
+                let age = 18;<br>
+                if (age >= 18) {<br>
+                &nbsp;&nbsp;console.log("You are an adult.");<br>
+                } else {<br>
+                &nbsp;&nbsp;console.log("You are a minor.");<br>
+                }
+            </div>
+        
+            <h3>Loops</h3>
+            <p>Loops are used to repeat a block of code multiple times. Here’s an example using a <code>for</code> loop:</p>
+            <div class="code-example">
+                
+                    for (let i = 0; i < 5; i++) {
+                        console.log("This is iteration number " + i);
+                    }
+                
+            </div>
+        
+            <h3>JavaScript in HTML</h3>
+            <p>JavaScript can be added directly to an HTML page inside a <code>&lt;script&gt;</code> tag. It can either be placed in the <code>&lt;head&gt;</code> or just before the closing <code>&lt;/body&gt;</code> tag for optimal performance.</p>
+        
+            <h3>Additional Resources</h3>
+            <p>To continue learning JavaScript, consider checking out the following resources:</p>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN Web Docs: JavaScript Guide</a></li>
+                  <li><a class="dropdown-item" href="https://www.w3schools.com/js/" target="_blank">W3Schools: JavaScript Tutorial</a></li>
+                  <li><a class="dropdown-item" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+                </ul>
+              </div>
+        </div>
+
+        <hr class="divider">
+
+        <h2 style="border: 4px solid #ee170f"> <strong>Note</strong>, if you have completed your learning on this page, you can go to take a small test about what you have learned.</h2>
+
+<button class="button" style="vertical-align:middle; background-color: green; text-align:center;"><a href="https://fahimyoussef05.github.io/Quiz/" target="_blank" style="color: #181717;">Take a Quiz</a></button>
+        
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="column">
+              <h2>My portfolio</h2>
+              <p>you can check my portfolio here</p>
+              <a href="https://l.instagram.com/?u=https%3A%2F%2Ffahimyoussef05.github.io%2Fportfoliowebsite%2F&e=AT1hGNuKq8TkMTtpFHfHgnEA63-gqPhy8--BLHBIefj8KOoJVsHmhPPLEo4ZkduFay83Vyhl-2VQYTvm1zIacrPXnMnePK5YeCJ32xI" target="_blank">Visit my portfolio</a>
+            </div>
+            
+            <div class="column">
+              <h2>social media</h2>
+              <p> you can follow me on social media here</p>
+              <a href="https://www.instagram.com/fahim__youssef/?__pwa=1" target="_blank ">Instagram</a>
+              <a href="https://www.linkedin.com/in/youssef-fahim-ab6bbb339/" target="_blank "> linkedin</a>
+            </div>
+            
+            <div class="column">
+              <h2>comment</h2>
+              <p> if you have any comment or question please don't hesitate to contact me in my portfolio or email</p>
+              <a href="mailto:fahimyoussef964@gmail.com" target="_blank ">fahim
+            </div>
+          </div>
+    </footer>
+</body>
+</html>
